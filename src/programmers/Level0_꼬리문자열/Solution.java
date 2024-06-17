@@ -1,0 +1,15 @@
+package programmers.Level0_꼬리문자열;
+
+class Solution {
+    public String solution(String[] str_list, String ex) {
+
+        StringBuilder answer = new StringBuilder();
+        for (String s : str_list) {
+            if(!s.contains(ex)) {
+                answer.append(s);
+            }
+        }
+
+        return answer.toString();
+    }
+}
