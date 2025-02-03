@@ -7,6 +7,7 @@ import java.util.StringTokenizer;
 
 /**
  * Created by sskim
+ * https://www.acmicpc.net/problem/11659
  */
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -17,7 +18,7 @@ public class Main {
         int quizNo = Integer.parseInt(stringTokenizer.nextToken());
         long[] S = new long[suNo + 1];
         stringTokenizer = new StringTokenizer(bufferedReader.readLine());
-        for (int i = 1; i < suNo; i++) {
+        for (int i = 1; i <= suNo; i++) {
             S[i] = S[i - 1] + Integer.parseInt(stringTokenizer.nextToken());
         }
         for (int q = 0; q < quizNo; q++) {
